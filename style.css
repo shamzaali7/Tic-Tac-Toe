@@ -7,10 +7,14 @@ body {
     grid-template-columns: 200px 200px 200px;
     grid-template-rows: 200px 200px 200px;
     justify-content: center;
-    justify-items: center;
+    
+}
+/* citations: https://www.youtube.com/watch?v=47WMoAfwfkU&ab_channel=KIRUPA */
+.grid-container div{
+    border-style:groove;
 }
 .item-1{
-
+    
 }
 .item-2{
 
