@@ -178,7 +178,7 @@ function checkWin(){
         alert("X Wins!");
     }else if(holder.box3 == "O" && holder.box6 == "O" && holder.box9 == "O"){
         alert("O Wins!");
-    }else if(holder.box14 == "X" && holder.box5 == "X" && holder.box6 == "X"){
+    }else if(holder.box4 == "X" && holder.box5 == "X" && holder.box6 == "X"){
         alert("X Wins!");
     }else if(holder.box4 == "O" && holder.box5 == "O" && holder.box6 == "O"){
         alert("O Wins!");
