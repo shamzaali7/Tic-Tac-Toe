@@ -215,3 +215,5 @@ function reset(){
     box9.innerHTML = 9;
     holder.box9 = "";
 };
+
+//sorry for such a long code window
