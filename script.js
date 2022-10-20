@@ -1,4 +1,3 @@
-const container = document.querySelectorAll(".grid");
 const box1 = document.querySelector(".item-1");
 const box2 = document.querySelector(".item-2");
 const box3 = document.querySelector(".item-3");
@@ -8,6 +7,7 @@ const box6 = document.querySelector(".item-6");
 const box7 = document.querySelector(".item-7");
 const box8 = document.querySelector(".item-8");
 const box9 = document.querySelector(".item-9");
+const resetButton = document.querySelector(".reset");
 let turn = document.querySelector(".turn");
 let holder = {
     box1: "",
@@ -145,6 +145,10 @@ box9.addEventListener("click", e => {
     }
 });
 
+resetButton.addEventListener("click", event => {
+    reset()
+})
+
 function whosTurn(){
     if (turn.innerHTML == "O"){
         turn.innerHTML = "X";
@@ -158,44 +162,56 @@ function checkWin(){
         alert("X Wins!");
     }else if(holder.box1 == "O" && holder.box2 == "O" && holder.box3 == "O"){
         alert("O Wins!");
-    }
-    if (holder.box1 == "X" && holder.box5 == "X" && holder.box9 == "X"){
+    }else if(holder.box1 == "X" && holder.box5 == "X" && holder.box9 == "X"){
         alert("X Wins!");
     }else if(holder.box1 == "O" && holder.box5 == "O" && holder.box9 == "O"){
         alert("O Wins!");
-    }
-    if (holder.box1 == "X" && holder.box4 == "X" && holder.box7 == "X"){
+    }else if(holder.box1 == "X" && holder.box4 == "X" && holder.box7 == "X"){
         alert("X Wins!");
     }else if(holder.box1 == "O" && holder.box4 == "O" && holder.box7 == "O"){
         alert("O Wins!");
-    }
-    if (holder.box2 == "X" && holder.box5 == "X" && holder.box8 == "X"){
+    }else if(holder.box2 == "X" && holder.box5 == "X" && holder.box8 == "X"){
         alert("X Wins!");
     }else if(holder.box2 == "O" && holder.box5 == "O" && holder.box8 == "O"){
         alert("O Wins!");
-    }
-    if (holder.box3 == "X" && holder.box6 == "X" && holder.box9 == "X"){
+    }else if(holder.box3 == "X" && holder.box6 == "X" && holder.box9 == "X"){
         alert("X Wins!");
     }else if(holder.box3 == "O" && holder.box6 == "O" && holder.box9 == "O"){
         alert("O Wins!");
-    }
-    if (holder.box14 == "X" && holder.box5 == "X" && holder.box6 == "X"){
+    }else if(holder.box14 == "X" && holder.box5 == "X" && holder.box6 == "X"){
         alert("X Wins!");
     }else if(holder.box4 == "O" && holder.box5 == "O" && holder.box6 == "O"){
         alert("O Wins!");
-    }
-    if (holder.box7 == "X" && holder.box8 == "X" && holder.box9 == "X"){
+    }else if(holder.box7 == "X" && holder.box8 == "X" && holder.box9 == "X"){
         alert("X Wins!");
     }else if(holder.box7 == "O" && holder.box8 == "O" && holder.box9 == "O"){
         alert("O Wins!");
-    }
-    if (holder.box7 == "X" && holder.box5 == "X" && holder.box3 == "X"){
+    }else if(holder.box7 == "X" && holder.box5 == "X" && holder.box3 == "X"){
         alert("X Wins!");
     }else if(holder.box7 == "O" && holder.box5 == "O" && holder.box3 == "O"){
         alert("O Wins!");
+    }else if(holder.box1 != "" && holder.box2 != "" && holder.box3 != "" && holder.box4 != "" && holder.box5 != "" && holder.box6 != "" && holder.box7 != "" && holder.box8 != "" && holder.box9 != ""){
+        alert("Its a tie")
     }
 }
 
 function reset(){
-
+    box1.innerHTML = 1;
+    holder.box1 = "";
+    box2.innerHTML = 2;
+    holder.box2 = "";
+    box3.innerHTML = 3;
+    holder.box3 = "";
+    box4.innerHTML = 4;
+    holder.box4 = "";
+    box5.innerHTML = 5;
+    holder.box5 = "";
+    box6.innerHTML = 6;
+    holder.box6 = "";
+    box7.innerHTML = 7;
+    holder.box7 = "";
+    box8.innerHTML = 8;
+    holder.box8 = "";
+    box9.innerHTML = 9;
+    holder.box9 = "";
 };
