@@ -33,7 +33,10 @@ box1.addEventListener("click", e => {
         box1.innerHTML = turn.innerHTML;
         holder.box1 = turn.innerHTML;
         console.log(holder, turn.innerHTML)
-        whosTurn(); 
+        whosTurn();
+        checkWin();
+    }else{
+        alert("That box is already selected")
     }
     
 });
@@ -44,7 +47,10 @@ box2.addEventListener("click", e => {
         box2.innerHTML = turn.innerHTML;
         holder.box2 = turn.innerHTML;
         console.log(holder, turn.innerHTML)
-        whosTurn(); 
+        whosTurn();
+        checkWin(); 
+    }else{
+        alert("That box is already selected")
     }
 });
 box3.addEventListener("click", e => {
@@ -54,7 +60,10 @@ box3.addEventListener("click", e => {
         box3.innerHTML = turn.innerHTML;
         holder.box3 = turn.innerHTML;
         console.log(holder, turn.innerHTML)
-        whosTurn(); 
+        whosTurn();
+        checkWin(); 
+    }else{
+        alert("That box is already selected")
     }
 });
 box4.addEventListener("click", e => {
@@ -64,7 +73,10 @@ box4.addEventListener("click", e => {
         box4.innerHTML = turn.innerHTML;
         holder.box4 = turn.innerHTML;
         console.log(holder, turn.innerHTML)
-        whosTurn(); 
+        whosTurn();
+        checkWin(); 
+    }else{
+        alert("That box is already selected")
     }
 });
 box5.addEventListener("click", e => {
@@ -74,7 +86,10 @@ box5.addEventListener("click", e => {
         box5.innerHTML = turn.innerHTML;
         holder.box5 = turn.innerHTML;
         console.log(holder, turn.innerHTML)
-        whosTurn(); 
+        whosTurn();
+        checkWin();
+    }else{
+        alert("That box is already selected")
     }
 });
 box6.addEventListener("click", e => {
@@ -84,7 +99,10 @@ box6.addEventListener("click", e => {
         box6.innerHTML = turn.innerHTML;
         holder.box6 = turn.innerHTML;
         console.log(holder, turn.innerHTML)
-        whosTurn(); 
+        whosTurn();
+        checkWin();
+    }else{
+        alert("That box is already selected")
     }
 });
 box7.addEventListener("click", e => {
@@ -94,7 +112,10 @@ box7.addEventListener("click", e => {
         box7.innerHTML = turn.innerHTML;
         holder.box7 = turn.innerHTML;
         console.log(holder, turn.innerHTML)
-        whosTurn(); 
+        whosTurn();
+        checkWin();
+    }else{
+        alert("That box is already selected")
     }
 });
 box8.addEventListener("click", e => {
@@ -104,7 +125,10 @@ box8.addEventListener("click", e => {
         box8.innerHTML = turn.innerHTML;
         holder.box8 = turn.innerHTML;
         console.log(holder, turn.innerHTML)
-        whosTurn(); 
+        whosTurn();
+        checkWin();
+    }else{
+        alert("That box is already selected")
     }
 });
 box9.addEventListener("click", e => {
@@ -114,7 +138,10 @@ box9.addEventListener("click", e => {
         box9.innerHTML = turn.innerHTML;
         holder.box9 = turn.innerHTML;
         console.log(holder, turn.innerHTML)
-        whosTurn(); 
+        whosTurn();
+        checkWin();
+    }else{
+        alert("That box is already selected")
     }
 });
 
@@ -125,3 +152,50 @@ function whosTurn(){
         turn.innerHTML = "O";
     }
 }
+
+function checkWin(){
+    if (holder.box1 == "X" && holder.box2 == "X" && holder.box3 == "X"){
+        alert("X Wins!");
+    }else if(holder.box1 == "O" && holder.box2 == "O" && holder.box3 == "O"){
+        alert("O Wins!");
+    }
+    if (holder.box1 == "X" && holder.box5 == "X" && holder.box9 == "X"){
+        alert("X Wins!");
+    }else if(holder.box1 == "O" && holder.box5 == "O" && holder.box9 == "O"){
+        alert("O Wins!");
+    }
+    if (holder.box1 == "X" && holder.box4 == "X" && holder.box7 == "X"){
+        alert("X Wins!");
+    }else if(holder.box1 == "O" && holder.box4 == "O" && holder.box7 == "O"){
+        alert("O Wins!");
+    }
+    if (holder.box2 == "X" && holder.box5 == "X" && holder.box8 == "X"){
+        alert("X Wins!");
+    }else if(holder.box2 == "O" && holder.box5 == "O" && holder.box8 == "O"){
+        alert("O Wins!");
+    }
+    if (holder.box3 == "X" && holder.box6 == "X" && holder.box9 == "X"){
+        alert("X Wins!");
+    }else if(holder.box3 == "O" && holder.box6 == "O" && holder.box9 == "O"){
+        alert("O Wins!");
+    }
+    if (holder.box14 == "X" && holder.box5 == "X" && holder.box6 == "X"){
+        alert("X Wins!");
+    }else if(holder.box4 == "O" && holder.box5 == "O" && holder.box6 == "O"){
+        alert("O Wins!");
+    }
+    if (holder.box7 == "X" && holder.box8 == "X" && holder.box9 == "X"){
+        alert("X Wins!");
+    }else if(holder.box7 == "O" && holder.box8 == "O" && holder.box9 == "O"){
+        alert("O Wins!");
+    }
+    if (holder.box7 == "X" && holder.box5 == "X" && holder.box3 == "X"){
+        alert("X Wins!");
+    }else if(holder.box7 == "O" && holder.box5 == "O" && holder.box3 == "O"){
+        alert("O Wins!");
+    }
+}
+
+function reset(){
+
+};
