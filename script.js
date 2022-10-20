@@ -28,7 +28,6 @@ let holder = {
 
 box1.addEventListener("click", e => {
     e.preventDefault();
-    console.log("It worked1!")
     if (holder.box1 == ""){
         box1.innerHTML = turn.innerHTML;
         holder.box1 = turn.innerHTML;
@@ -38,11 +37,9 @@ box1.addEventListener("click", e => {
     }else{
         alert("That box is already selected")
     }
-    
 });
 box2.addEventListener("click", e => {
     e.preventDefault();
-    console.log("It worked2!")
     if (holder.box2 == ""){
         box2.innerHTML = turn.innerHTML;
         holder.box2 = turn.innerHTML;
@@ -55,7 +52,6 @@ box2.addEventListener("click", e => {
 });
 box3.addEventListener("click", e => {
     e.preventDefault();
-    console.log("It worked3!")
     if (holder.box3 == ""){
         box3.innerHTML = turn.innerHTML;
         holder.box3 = turn.innerHTML;
@@ -68,7 +64,6 @@ box3.addEventListener("click", e => {
 });
 box4.addEventListener("click", e => {
     e.preventDefault();
-    console.log("It worked4!")
     if (holder.box4 == ""){
         box4.innerHTML = turn.innerHTML;
         holder.box4 = turn.innerHTML;
@@ -81,7 +76,6 @@ box4.addEventListener("click", e => {
 });
 box5.addEventListener("click", e => {
     e.preventDefault();
-    console.log("It worked5!")
     if (holder.box5 == ""){
         box5.innerHTML = turn.innerHTML;
         holder.box5 = turn.innerHTML;
@@ -94,7 +88,6 @@ box5.addEventListener("click", e => {
 });
 box6.addEventListener("click", e => {
     e.preventDefault();
-    console.log("It worked6!")
     if (holder.box6 == ""){
         box6.innerHTML = turn.innerHTML;
         holder.box6 = turn.innerHTML;
@@ -107,7 +100,6 @@ box6.addEventListener("click", e => {
 });
 box7.addEventListener("click", e => {
     e.preventDefault();
-    console.log("It worked7!")
     if (holder.box7 == ""){
         box7.innerHTML = turn.innerHTML;
         holder.box7 = turn.innerHTML;
@@ -120,7 +112,6 @@ box7.addEventListener("click", e => {
 });
 box8.addEventListener("click", e => {
     e.preventDefault();
-    console.log("It worked8!")
     if (holder.box8 == ""){
         box8.innerHTML = turn.innerHTML;
         holder.box8 = turn.innerHTML;
@@ -133,7 +124,6 @@ box8.addEventListener("click", e => {
 });
 box9.addEventListener("click", e => {
     e.preventDefault();
-    console.log("It worked9!")
     if (holder.box9 == ""){
         box9.innerHTML = turn.innerHTML;
         holder.box9 = turn.innerHTML;
@@ -196,23 +186,23 @@ function checkWin(){
 }
 
 function reset(){
-    box1.innerHTML = 1;
+    box1.innerHTML = "";
     holder.box1 = "";
-    box2.innerHTML = 2;
+    box2.innerHTML = "";
     holder.box2 = "";
-    box3.innerHTML = 3;
+    box3.innerHTML = "";
     holder.box3 = "";
-    box4.innerHTML = 4;
+    box4.innerHTML = "";
     holder.box4 = "";
-    box5.innerHTML = 5;
+    box5.innerHTML = "";
     holder.box5 = "";
-    box6.innerHTML = 6;
+    box6.innerHTML = "";
     holder.box6 = "";
-    box7.innerHTML = 7;
+    box7.innerHTML = "";
     holder.box7 = "";
-    box8.innerHTML = 8;
+    box8.innerHTML = "";
     holder.box8 = "";
-    box9.innerHTML = 9;
+    box9.innerHTML = "";
     holder.box9 = "";
 };
 
